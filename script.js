@@ -150,7 +150,7 @@ function sendOrder() {
         المنتجات:
         ${cart.map(item => `${item.name} (x${item.quantity}): ${item.price * item.quantity} جنيه`).join('\n')}
     `;
-    const whatsappURL = `https://wa.me/201030851648?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/+971509925068?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
     cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));
